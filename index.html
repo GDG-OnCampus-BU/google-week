@@ -8,23 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                gred: '#EA4335',
+                ggreen: '#0F9D58',
+                gblue: '#4285F4',
+                gyellow: '#FBBC04'
+              }
+            }
+          }
+        }
+      </script>
   </head>
   <body>
-    <nav class="w-full sticky top-0 flex justify-center">
+    <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg	">
       <div class="w-[98%] rounded-lg p-2 mt-2" style="background: linear-gradient(90.58deg, rgba(251, 188, 4, 0.5) 40.08%, rgba(234, 67, 53, 0.5) 61.69%);">
-        <div class="flex justify-between ml-12">
+        <div class="flex justify-between ml-6 md:ml-12">
           <div class="flex">
             <div class="hidden md:block flex justify-center items-center">
               <img src="./banner.png" class="h-14"/>
             </div>
+            <div class="md:hidden flex justify-center items-center">
+              <img src="./gdsc.svg" class="h-10"/>
+            </div>
           </div>
         <div class="flex content-center place-content-center justify-center">
-          <button class="bg-[#0F9D58] hover:bg-[#FBBC04] rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-4">Events</button>
-          <button class="bg-[#4285F4] hover:bg-[#EA4335] rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-12">Contact</button>
+          <button class="bg-ggreen hover:bg-gyellow rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-4">Events</button>
+          <button class="bg-gblue hover:bg-gred rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-6 md:mr-12">Contact</button>
         </div>
         </div>
         </div>
     </nav>
+    <div class="flex items-center justify-center -mt-20 h-screen">
+      <div class="text-8xl font-bold w-auto font-[Poppins]">
+        <p><span class="text-gblue">G</span><span class="text-gred">o</span><span class="text-gyellow">o</span><span class="text-gblue">g</span><span class="text-ggreen">l</span><span class="text-gred">e</span> <span class="text-gblue">W</span><span class="text-ggreen">e</span><span class="text-gyellow">e</span><span class="text-gred">k</span></p>
+        <p class="text-3xl align-right text-right -mt-3"><span class="text-gyellow">23 </span><span class="text-gred">- 28th</span> <span class="text-gblue">Mar</span><span class="text-ggreen">ch</span></p>
+      </div>
+    </div>
     <script src="" async defer></script>
   </body>
 </html>
