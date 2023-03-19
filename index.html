@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     </style>
@@ -19,15 +21,15 @@
                 gred: '#EA4335',
                 ggreen: '#0F9D58',
                 gblue: '#4285F4',
-                gyellow: '#FBBC04'
+                gyellow: '#FBBC04',
               }
             }
           }
         }
       </script>
   </head>
-  <body class="overflow-x-hidden">
-    <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg	">
+  <body class="overflow-x-hidden" data-scroll-container>
+    <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg z-20">
       <div class="w-[98%] rounded-lg p-2 mt-2" style="background: linear-gradient(90.58deg, rgba(251, 188, 4, 0.5) 40.08%, rgba(234, 67, 53, 0.5) 61.69%);">
         <div class="flex justify-between ml-6 md:ml-12">
           <div class="flex">
@@ -45,7 +47,7 @@
         </div>
         </div>
     </nav>
-    <section class="flex items-center justify-center -mt-20 h-screen">
+    <section class="flex items-center justify-center -mt-20 h-screen" data-scroll-section>
       <div class="text-8xl font-bold w-auto font-[Poppins]">
         <p><span class="text-gblue">G</span><span class="text-gred">o</span><span class="text-gyellow">o</span><span class="text-gblue">g</span><span class="text-ggreen">l</span><span class="text-gred">e</span> <span class="text-gblue">W</span><span class="text-ggreen">e</span><span class="text-gyellow">e</span><span class="text-gred">k</span></p>
         <p class="text-3xl align-right text-right -mt-3"><span class="text-gyellow">23 </span><span class="text-gred">- 28th</span> <span class="text-gblue">Mar</span><span class="text-ggreen">ch</span></p>
@@ -56,10 +58,17 @@
           ">Explore<br>Events</button></div>
       </div>
 
-      <div class="absolute left-0 bottom-0 rounded-full w-96 h-96 -mb-48 -mx-20 bg-gyellow">
-      <div class="absolute left-0 bottom-0 rounded-full w-96 h-96 mb-28 -mx-24 bg-gblue"></div></div>
-      <div class="absolute right-0 bottom-0 rounded-full w-96 h-96 -mb-48 -mx-20 bg-gred">
-      <div class="absolute right-0 bottom-0 rounded-full w-96 h-96 mb-28 -mx-24 bg-ggreen"></div></div>
+      <div class="absolute left-0 bottom-0 rounded-full w-96 h-96 -mx-20 bg-gyellow z-50" data-scroll data-scroll-speed="3">
+      <div class="absolute left-0 bottom-0 rounded-full w-96 h-96 mb-12 -mx-24 bg-gblue z-50"data-scroll data-scroll-speed="8"></div></div>
+      <div class="absolute right-0 bottom-0 rounded-full w-96 h-96 -mx-20 bg-gred z-50" data-scroll data-scroll-speed="3">
+      <div class="absolute right-0 bottom-0 rounded-full w-96 h-96 mb-12 -mx-24 bg-ggreen z-50" data-scroll data-scroll-speed="8"></div></div>
     </section>
+    <section class="h-screen w-screen" data-scroll-section></section>
+    <script>
+      const scroller = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true
+      });
+    </script>
   </body>
 </html>
