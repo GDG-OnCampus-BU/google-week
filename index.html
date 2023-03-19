@@ -28,6 +28,68 @@
       }
     }
   </script>
+  <style>
+    .top-element {
+        display: none;
+    }
+
+    @media screen and (max-width: 740px) {
+        .center-element {
+            display: none;
+        }
+
+        .top-element {
+            display: block;
+        }
+
+        /* .events-flex{
+            float: left;
+    display: block;
+        } */
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .left-align {
+  text-align: left;
+}
+.right-align {
+  text-align: right;
+}
+.center-align {
+  align-items: center;
+  text-align: center;
+  width: 700px;
+  padding: 0%;
+  margin: 0%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.flex-items {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  text-align: center;
+}
+.know-more {
+  padding: 10;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+  </style>
 </head>
 
 <body class="overflow-x-hidden" data-scroll-container>
@@ -86,9 +148,61 @@
         data-scroll data-scroll-speed="8"></div>
     </div>
   </section>
-  <!-- Events Timeline -->
-  <div></div>
-  <section class="h-screen w-screen" data-scroll-section></section>
+  <section class="h-screen w-screen flex justify-center" data-scroll-section>
+    <div class="flex font-[poppins]">
+      <div class="w-1/3">
+          <div class="top-element">
+              <h1 style="text-align: center;">{<span style="color: #EA4335;">Ti</span><span
+                      style="color: #4285F4;">me</span><span style="color:#0F9D58">li</span><span
+                      style="color: #FBBC04;">ne</span>}</h1>
+              <img src="replace.png" alt="gif" style="width: 300px;">
+          </div>
+          <div class="flex flex-col">
+              <div class="pb-48">
+                  <p class="text-3xl">23rd March</p>
+                  <p class="text-6xl font-bold">Github & Bash</p>
+                  <p class="text-3xl">XYZ details</p>
+                  <button class="rounded-full text-white font-bold bg-gyellow px-6 py-2 mt-4 text-3xl">Know More</button>
+
+              </div>
+              <div class="pb-48">
+                  <p class="text-3xl">25th March</p>
+                  <p class="text-6xl font-bold">Flutter</p>
+                  <p class="text-3xl">XYZ details</p>
+                  <button class="rounded-full text-white font-bold bg-gblue px-6 py-2 mt-4 text-3xl">Know More</button>
+
+              </div>
+          </div>
+      </div>
+      <div class="flex flex-col">
+          <div class="mt-32">
+              <h1 class="text-6xl text-center font-bold">{<span style="color: #EA4335;">Ti</span><span
+                      style="color: #4285F4;">me</span><span style="color:#0F9D58">li</span><span
+                      style="color: #FBBC04;">ne</span>}</h1>
+              <img src="replace.png" alt="gif" style="width: 700px;">
+          </div>
+      </div>
+      <div class="w-1/3">
+          <div class="flex flex-col">
+              <div class="pb-48">
+                  <p class="text-3xl">24th March</p>
+                  <p class="text-6xl font-bold">Web Dev</p>
+                  <p class="text-3xl">XYZ details</p>
+                  <button class="rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl">Know More</button>
+
+              </div>
+              <div class="pb-48">
+                  <p class="text-3xl">26th March</p>
+                  <p class="text-6xl font-bold">AI talkshow</p>
+                  <p class="text-3xl">XYZ details</p>
+                  <button class="rounded-full text-white font-bold bg-gred px-6 py-2 mt-4 text-3xl">Know More</button>
+
+              </div>
+          </div>
+      </div>
+
+  </div>
+  </section>
   <script>
     const scroller = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
