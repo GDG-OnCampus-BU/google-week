@@ -11,7 +11,7 @@
 
 <body>
     <div class="flex-container">
-        <div class="flex-item">
+        <div class="flex-item left-align">
 
             <div class="top-element">
                 <h1 style="text-align: center;">{<span style="color: #EA4335;">Ti</span><span
@@ -20,46 +20,46 @@
                 <img src="replace.png" alt="gif" style="width: 300px;">
             </div>
             <div class="events-flex">
-            <div>
-                <h3>23rd March</h3>
-                <h1>Github & Bash</h1>
-                <p>XYZ details</p>
-                <button class="know-more" style="background-color: #FBBC04;">Know More</button>
+                <div>
+                    <h3>23rd March</h3>
+                    <h1>Github & Bash</h1>
+                    <p>XYZ details</p>
+                    <button class="know-more" style="background-color: #FBBC04;">Know More</button>
 
-            </div>
-            <div>
-                <h3>25th March</h3>
-                <h1>Flutter</h1>
-                <p>XYZ details</p>
-                <button class="know-more" style="background-color: #4285F4;">Know More</button>
+                </div>
+                <div>
+                    <h3>25th March</h3>
+                    <h1>Flutter</h1>
+                    <p>XYZ details</p>
+                    <button class="know-more" style="background-color: #4285F4;">Know More</button>
 
-            </div>
+                </div>
             </div>
         </div>
-        <div class="flex-item">
+        <div class="flex-item centera-align">
             <div class="center-element">
-            <h1 style="text-align: center;">{<span style="color: #EA4335;">Ti</span><span
-                    style="color: #4285F4;">me</span><span style="color:#0F9D58">li</span><span
-                    style="color: #FBBC04;">ne</span>}</h1>
-            <img src="replace.png" alt="gif" style="width: 300px;">
-        </div>
+                <h1 style="text-align: center;">{<span style="color: #EA4335;">Ti</span><span
+                        style="color: #4285F4;">me</span><span style="color:#0F9D58">li</span><span
+                        style="color: #FBBC04;">ne</span>}</h1>
+                <img src="replace.png" alt="gif" style="width: 700px;">
+            </div>
         </div>
         <div class="flex-item">
-            <div class="events-flex">
-            <div>
-                <h3>24th March</h3>
-                <h1>Web Dev</h1>
-                <p>XYZ details</p>
-                <button class="know-more" style="background-color: #0F9D58;">Know More</button>
+            <div class="events-flex right-align">
+                <div>
+                    <h3>24th March</h3>
+                    <h1>Web Dev</h1>
+                    <p>XYZ details</p>
+                    <button class="know-more" style="background-color: #0F9D58;">Know More</button>
 
-            </div>
-            <div>
-                <h3>26th March</h3>
-                <h1>AI talkshow</h1>
-                <p>XYZ details</p>
-                <button class="know-more" style="background-color: #EA4335;">Know More</button>
+                </div>
+                <div>
+                    <h3>26th March</h3>
+                    <h1>AI talkshow</h1>
+                    <p>XYZ details</p>
+                    <button class="know-more" style="background-color: #EA4335;">Know More</button>
 
-            </div>
+                </div>
             </div>
         </div>
 
@@ -67,27 +67,28 @@
 
 </body>
 <style>
-    .top-element{
+    .top-element {
         display: none;
     }
-    @media screen and (max-width: 740px){
-        .center-element{
+
+    @media screen and (max-width: 740px) {
+        .center-element {
             display: none;
         }
-        .top-element{
+
+        .top-element {
             display: block;
         }
+
         /* .events-flex{
             float: left;
     display: block;
         } */
-        .flex-container{
+        .flex-container {
             display: flex;
-  align-items: center;
-  justify-content: center;        }
-
-
-    
+            align-items: center;
+            justify-content: center;
+        }
 </style>
 
 </html>
