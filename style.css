@@ -1,6 +1,29 @@
+body {
+  font-family: "poppins";
+  font-size: 16px;
+  padding: 0;
+}
+
 .flex-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  flex-wrap: wrap;
+}
+.flex-items {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  border: 1px solid black;
+  text-align: center;
+}
+.know-more {
+  padding: 10;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
 }
