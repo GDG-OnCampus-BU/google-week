@@ -783,18 +783,18 @@ data-scroll-id="day4"
 
 </section>
 
-<footer data-scroll-section id="about" data-scroll-id="about">
+<footer data-scroll-section id="about" data-scroll-id="about" class="pb-64 md:pb-0">
   <div class="w-full bg-gray-700 flex flex-col md:flex-row py-8 px-12 flex justify-evenly space-x-6 space-y-6">
   <div class="rounded-lg overflow-hidden">
       <iframe class="w-full h-[250px] md:w-[560px] md:h-[315px]" src="https://www.youtube.com/embed/cBfjdg5zeAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class="md:w-1/3">
-    <p class="text-6xl text-white font-bold">About GDSC</p>
+    <p class="text-5xl text-white font-bold">About GDSC</p>
     <p class="text-white text-xl">
       Google Developer Student Club Bennett University is a program that supports student developers worldwide, empowering them with technical skills and resources to become tech leaders in their communities. The program inspires innovation and entrepreneurship while encouraging students to use technology to solve real-world problems.</p>
   </div>
   <div>
-    <p class="text-6xl text-white font-bold"> Connect With Us!</p>
+    <p class="text-5xl text-white font-bold" data-scroll=""> Connect With Us!</p>
     <div class="flex-row">
       <a href="https://twitter.com/dsc_bu">
         <div class="flex">
@@ -827,7 +827,7 @@ data-scroll-id="day4"
         </div>
       </a>
       <a href="https://www.linkedin.com/company/dsc-bu">
-        <div class="flex">
+        <div class="flex mb-4">
           <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
           width="50" height="50"
           viewBox="0 0 30 30">
@@ -843,22 +843,25 @@ data-scroll-id="day4"
   </div>
 </div>
 </footer>
+<!-- <section class="md:hidden h-1 w-full bg-gray-700" data-scroll-section>
+  ㅤㅤ
+
+</section> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
     <script>
-      window.addEventListener("load", () => {
-        const scroller = new LocomotiveScroll({
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-          smoothMobile: true,
-        });
-        document.addEventListener("lazyloaded", function () {
-          scroller.update();
-        });
+      const scroller = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smoothMobile: true,
+      });
+      document.addEventListener("lazyloaded", function () {
+        scroller.update();
       });
 
       setTimeout(() => {
+        console.log("updating")
         scroller.update();
       }, 1000);
     </script>
