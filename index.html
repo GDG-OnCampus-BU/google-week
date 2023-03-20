@@ -14,8 +14,9 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      @import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
     </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -74,7 +75,7 @@
       class="flex items-center justify-center -mt-20 h-screen"
       data-scroll-section
     >
-      <div class="text-8xl font-bold w-auto font-[Poppins] text-center">
+      <div class="text-8xl font-bold w-auto font-[google_sans] text-center">
         <p>
           <span class="text-gblue">G</span><span class="text-gred">o</span
           ><span class="text-gyellow">o</span><span class="text-gblue">g</span
@@ -105,7 +106,7 @@
                 class="w-full h-full text-xl bg-white hover:bg-black rounded-full px-16 py-2"
               >
                 <p
-                  class="font-thin"
+                  class="font-bold"
                   style="
                     background: linear-gradient(
                       180deg,
@@ -155,7 +156,7 @@
       data-scroll-id="timeline"
     >
       <div
-        class="flex flex-col md:flex-row font-[poppins] text-center md:text-left justify-center"
+        class="flex flex-col md:flex-row font-[google_sans] text-center md:text-left justify-center"
         data-scroll
       >
         <div
@@ -205,8 +206,8 @@
               <p class="text-3xl">XYZ details</p>
               <button
                 class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gblue hover:border hover:border-2 hover:border-gblue rounded-full text-white font-bold bg-gblue px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-                href="#day2"
-                data-scroll-to="day2"
+                href="#day3"
+                data-scroll-to="day3"
                 >
                 Know More
               </button>
@@ -248,7 +249,9 @@
               <p class="text-3xl">XYZ details</p>
               <button
                 class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-              >
+                href="#day2"
+                data-scroll-to="day2"
+                >
                 Know More
               </button>
             </div>
@@ -260,7 +263,9 @@
               <p class="text-3xl">XYZ details</p>
               <button
                 class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gred hover:border hover:border-2 hover:border-gred rounded-full text-white font-bold bg-gred px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-              >
+                href="#day4"
+                data-scroll-to="day4"
+                >
                 Know More
               </button>
             </div>
@@ -268,13 +273,13 @@
         </div>
       </div>
     </section>
+
     <section
       id="day1"
       class="w-screen flex justify-center"
       data-scroll-section
       data-scroll-id="day1"
     >
-      <!--Event Day Section Start-->
       <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
         <div class="rounded-lg bg-gyellow mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
           <div class="flex flex-col md:flex-row justify-evenly w-full">
@@ -353,14 +358,275 @@
           </div>
         </div>
       </div>
-      <!-- Event Day section end-->
+      
     </section>
+  <!-- Sectioon event end-->
+  <section
+  id="day2"
+  class="w-screen flex justify-center"
+  data-scroll-section
+  data-scroll-id="day2"
+>
+  <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
+    <div class="rounded-lg bg-ggreen mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
+      <div class="flex flex-col md:flex-row justify-evenly w-full">
+        <div class="md:w-1/2">
+          <p class="text-6xl font-bold">Event Name</p>
+          <p class="text-2xl">24rd March - 6-8 pm<br />Venue: 002ALH</p>
+          <p class="text-2xl pt-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            doloribus, sapiente animi veritatis tempora accusantium autem.
+            Quisquam perferendis, dolorem blanditiis quod excepturi natus
+            dolore optio obcaecati explicabo consectetur, praesentium iusto?
+          </p>
+        </div>
+        <div class="md:w-1/2 flex flex-col justify-end">
+          <!-- Insert image placeholder -->
+          <div class="flex justify-center">
+            <img
+              src="https://picsum.photos/300/300"
+              alt="placeholder"
+              class="rounded-lg w-[300px] h-[300px]"
+            />
+          </div>
+          <button
+            class="hover:scale-110 transition ease-in-out hover:bg-ggreen hover:text-gblue hover:border hover:border-2 hover:border-gblue rounded-full text-white font-bold bg-gblue px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
+          >
+            RSVP
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-lg bg-ggreen mx-2 md:w-1/3">
+      <div class="flex flex-col h-full w-full">
+        <div class="flex justify-center py-4">
+          <img
+            src="https://picsum.photos/300/300"
+            class="rounded-full w-[300px] h-[300px] border border-8 border-gblue"
+          />
+        </div>
+        <div class="flex flex-col justify-center text-center">
+          <p class="text-3xl font-bold">Name Surname</p>
+          <p>Post/Designation/Description</p>
+          <div class="flex justify-center my-4">
+            <a href="linkedin" class="rounded-full bg-white mx-4">
+              <svg
+                fill="#000000"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 455 455"
+                xml:space="preserve"
+                class="h-10 w-10 rounded-full"
+              >
+                <g>
+                  <path
+                    style="fill-rule: evenodd; clip-rule: evenodd"
+                    d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
+                  />
+                  <path
+                    style="fill-rule: evenodd; clip-rule: evenodd"
+                    d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                      M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+                    c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+                    c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+                    c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+                    z"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a href="twitter" class="bg-white rounded-full mx-4">
+              <img src="./icons/twitter.png" class="w-10 h-10" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section
+id="day3"
+class="w-screen flex justify-center"
+data-scroll-section
+data-scroll-id="day3"
+>
+<div class="flex flex-col md:flex-row w-full justify-evenly my-4">
+  <div class="rounded-lg bg-gblue mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
+    <div class="flex flex-col md:flex-row justify-evenly w-full">
+      <div class="md:w-1/2">
+        <p class="text-6xl font-bold">Event Name</p>
+        <p class="text-2xl">26th March - 6-8 pm<br />Venue: 002ALH</p>
+        <p class="text-2xl pt-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+          doloribus, sapiente animi veritatis tempora accusantium autem.
+          Quisquam perferendis, dolorem blanditiis quod excepturi natus
+          dolore optio obcaecati explicabo consectetur, praesentium iusto?
+        </p>
+      </div>
+      <div class="md:w-1/2 flex flex-col justify-end">
+        <!-- Insert image placeholder -->
+        <div class="flex justify-center">
+          <img
+            src="https://picsum.photos/300/300"
+            alt="placeholder"
+            class="rounded-lg w-[300px] h-[300px]"
+          />
+        </div>
+        <button
+          class="hover:scale-110 transition ease-in-out hover:bg-gblue hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
+        >
+          RSVP
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="rounded-lg bg-gblue mx-2 md:w-1/3">
+    <div class="flex flex-col h-full w-full">
+      <div class="flex justify-center py-4">
+        <img
+          src="https://picsum.photos/300/300"
+          class="rounded-full w-[300px] h-[300px] border border-8 border-ggreen"
+        />
+      </div>
+      <div class="flex flex-col justify-center text-center">
+        <p class="text-3xl font-bold">Name Surname</p>
+        <p>Post/Designation/Description</p>
+        <div class="flex justify-center my-4">
+          <a href="linkedin" class="rounded-full bg-white mx-4">
+            <svg
+              fill="#000000"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 455 455"
+              xml:space="preserve"
+              class="h-10 w-10 rounded-full"
+            >
+              <g>
+                <path
+                  style="fill-rule: evenodd; clip-rule: evenodd"
+                  d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
+                />
+                <path
+                  style="fill-rule: evenodd; clip-rule: evenodd"
+                  d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                    M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+                  c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+                  c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+                  c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+                  z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="twitter" class="bg-white rounded-full mx-4">
+            <img src="./icons/twitter.png" class="w-10 h-10" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section
+id="day4"
+class="w-screen flex justify-center"
+data-scroll-section
+data-scroll-id="day4"
+>
+<div class="flex flex-col md:flex-row w-full justify-evenly my-4">
+  <div class="rounded-lg bg-gred mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
+    <div class="flex flex-col md:flex-row justify-evenly w-full">
+      <div class="md:w-1/2">
+        <p class="text-6xl font-bold">Event Name</p>
+        <p class="text-2xl">28th March - 6-8 pm<br />Venue: 002ALH</p>
+        <p class="text-2xl pt-8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+          doloribus, sapiente animi veritatis tempora accusantium autem.
+          Quisquam perferendis, dolorem blanditiis quod excepturi natus
+          dolore optio obcaecati explicabo consectetur, praesentium iusto?
+        </p>
+      </div>
+      <div class="md:w-1/2 flex flex-col justify-end">
+        <!-- Insert image placeholder -->
+        <div class="flex justify-center">
+          <img
+            src="https://picsum.photos/300/300"
+            alt="placeholder"
+            class="rounded-lg w-[300px] h-[300px]"
+          />
+        </div>
+        <button
+          class="hover:scale-110 transition ease-in-out hover:bg-ggred hover:text-gyellow hover:border hover:border-2 hover:border-gyellow rounded-full text-white font-bold bg-gyellow px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
+        >
+          RSVP
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="rounded-lg bg-gred mx-2 md:w-1/3">
+    <div class="flex flex-col h-full w-full">
+      <div class="flex justify-center py-4">
+        <img
+          src="https://picsum.photos/300/300"
+          class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow"
+        />
+      </div>
+      <div class="flex flex-col justify-center text-center">
+        <p class="text-3xl font-bold">Name Surname</p>
+        <p>Post/Designation/Description</p>
+        <div class="flex justify-center my-4">
+          <a href="linkedin" class="rounded-full bg-white mx-4">
+            <svg
+              fill="#000000"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 455 455"
+              xml:space="preserve"
+              class="h-10 w-10 rounded-full"
+            >
+              <g>
+                <path
+                  style="fill-rule: evenodd; clip-rule: evenodd"
+                  d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
+                />
+                <path
+                  style="fill-rule: evenodd; clip-rule: evenodd"
+                  d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                    M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+                  c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+                  c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+                  c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+                  z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="twitter" class="bg-white rounded-full mx-4">
+            <img src="./icons/twitter.png" class="w-10 h-10" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
     <script>
       window.addEventListener("load", () => {
         const scroller = new LocomotiveScroll({
           el: document.querySelector("[data-scroll-container]"),
           smooth: true,
-          smoothMobile: true,
         });
         document.addEventListener("lazyloaded", function () {
           scroller.update();
