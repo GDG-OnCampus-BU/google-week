@@ -627,6 +627,7 @@ data-scroll-id="day4"
         const scroller = new LocomotiveScroll({
           el: document.querySelector("[data-scroll-container]"),
           smooth: true,
+          smoothMobile: true,
         });
         document.addEventListener("lazyloaded", function () {
           scroller.update();
