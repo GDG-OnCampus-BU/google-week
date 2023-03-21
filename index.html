@@ -15,6 +15,16 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <style>
       @import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
+      html{
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+      }
+      body{
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+      }
     </style>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 
@@ -34,8 +44,8 @@
     </script>
   </head>
 
-  <body class="overflow-x-hidden" data-scroll-container>
-    <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg z-20">
+  <body class="overflow-x-hidden w-screen" data-scroll-container>
+    <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg z-50">
       <div
         class="w-[98%] rounded-lg p-2 mt-2"
         style="
@@ -858,7 +868,6 @@ data-scroll-id="day4"
       const scroller = new LocomotiveScroll({
         el: document.querySelector("[data-scroll-container]"),
         smooth: true,
-        smoothMobile: true,
       });
       document.addEventListener("lazyloaded", function () {
         scroller.update();
@@ -868,6 +877,10 @@ data-scroll-id="day4"
         console.log("updating")
         scroller.update();
       }, 1000);
+      var scrollEventHandler = function () {
+        window.scroll(0, window.pageYOffset)
+      }
+      window.addEventListener("scroll", scrollEventHandler, false);
     </script>
   </body>
 </html>
