@@ -1,111 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
-      html{
-        overflow-x: hidden;
-        width: 100%;
-        max-width: 100%;
-      }
-      body{
-        overflow-x: hidden;
-        width: 100%;
-        max-width: 100%;
-      }
-    </style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              gred: "#EA4335",
-              ggreen: "#0F9D58",
-              gblue: "#4285F4",
-              gyellow: "#FBBC04",
-            },
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Google+Sans:100,300,400,500,700,900,100i,300i,400i,500i,700i,900i');
+
+    html {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100%;
+    }
+  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gred: "#EA4335",
+            ggreen: "#0F9D58",
+            gblue: "#4285F4",
+            gyellow: "#FBBC04",
           },
         },
-      };
-    </script>
-  </head>
+      },
+    };
+  </script>
+</head>
 
-  <body class="overflow-x-hidden w-screen" data-scroll-container>
-    <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg z-50">
-      <div
-        class="w-[98%] rounded-lg p-2 mt-2"
-        style="
+<body class="overflow-x-hidden w-screen" data-scroll-container>
+  <nav class="w-full sticky top-0 flex justify-center backdrop-blur-lg z-50">
+    <div class="w-[98%] rounded-lg p-2 mt-2" style="
           background: linear-gradient(
             90.58deg,
             rgba(251, 188, 4, 0.5) 40.08%,
             rgba(234, 67, 53, 0.5) 61.69%
           );
-        "
-      >
-        <div class="flex justify-between ml-6 md:ml-12">
-          <div class="flex">
-            <div class="hidden md:block flex justify-center items-center">
-              <img src="./banner.png" class="h-14" />
-            </div>
-            <div class="md:hidden flex justify-center items-center">
-              <img src="./gdsc.svg" class="h-10" />
-            </div>
+        ">
+      <div class="flex justify-between ml-6 md:ml-12">
+        <div class="flex">
+          <div class="hidden md:block flex justify-center items-center">
+            <img src="./banner.png" class="h-14" />
           </div>
-          <div class="flex content-center place-content-center justify-center">
-            <button
-              class="bg-ggreen hover:bg-gyellow rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-4"
-              data-scroll-to="timeline"
-              href="#timeline"
-            >
-              Events
-            </button>
-            <button
-              class="bg-gblue hover:bg-gred rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-6 md:mr-12"
-              href="#about"
-              data-scroll-to="about"
-            >
-              About
-            </button>
+          <div class="md:hidden flex justify-center items-center">
+            <img src="./gdsc.svg" class="h-10" />
           </div>
         </div>
+        <div class="flex content-center place-content-center justify-center">
+          <button class="bg-ggreen hover:bg-gyellow rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-4"
+            data-scroll-to="timeline" href="#timeline">
+            Events
+          </button>
+          <button
+            class="bg-gblue hover:bg-gred rounded-full px-6 h-2/3 text-white font-bold place-self-center mr-6 md:mr-12"
+            href="#about" data-scroll-to="about">
+            About
+          </button>
+        </div>
       </div>
-    </nav>
-    <section
-      class="flex items-center justify-center -mt-20 h-screen"
-      data-scroll-section
-    >
-      <div class="text-8xl font-bold w-auto font-[google_sans] text-center">
-        <p>
-          <span class="text-gblue">G</span><span class="text-gred">o</span
-          ><span class="text-gyellow">o</span><span class="text-gblue">g</span
-          ><span class="text-ggreen">l</span><span class="text-gred">e</span>
-          <span class="text-gblue">W</span><span class="text-ggreen">e</span
-          ><span class="text-gyellow">e</span><span class="text-gred">k</span>
-        </p>
-        <p class="text-3xl align-right text-center md:text-right -mt-3">
-          <span class="text-gyellow">23 </span
-          ><span class="text-gred">- 28th</span>
-          <span class="text-gblue">Mar</span><span class="text-ggreen">ch</span>
-        </p>
-        <div class="flex justify-center my-8">
-          <a href="#timeline" data-scroll-to>
-            <div
-              class="rounded-full p-1"
-              style="
+    </div>
+  </nav>
+  <section class="flex items-center justify-center -mt-20 h-screen" data-scroll-section>
+    <div class="text-8xl font-bold w-auto font-[google_sans] text-center">
+      <p>
+        <span class="text-gblue">G</span><span class="text-gred">o</span><span class="text-gyellow">o</span><span
+          class="text-gblue">g</span><span class="text-ggreen">l</span><span class="text-gred">e</span>
+        <span class="text-gblue">W</span><span class="text-ggreen">e</span><span class="text-gyellow">e</span><span
+          class="text-gred">k</span>
+      </p>
+      <p class="text-3xl align-right text-center md:text-right -mt-3">
+        <span class="text-gyellow">23 </span><span class="text-gred">- 28th</span>
+        <span class="text-gblue">Mar</span><span class="text-ggreen">ch</span>
+      </p>
+      <div class="flex justify-center my-8">
+        <a href="#timeline" data-scroll-to>
+          <div class="rounded-full p-1" style="
                 background-image: linear-gradient(
                   91.28deg,
                   #4285f4 0.96%,
@@ -113,14 +98,9 @@
                   #0f9d58 68.77%,
                   #ed564a 99.14%
                 );
-              "
-            >
-              <div
-                class="w-full h-full text-xl bg-white hover:bg-black rounded-full px-16 py-2"
-              >
-                <p
-                  class="font-bold"
-                  style="
+              ">
+            <div class="w-full h-full text-xl bg-white hover:bg-black rounded-full px-16 py-2">
+              <p class="font-bold" style="
                     background: linear-gradient(
                       180deg,
                       #fbbc04 0%,
@@ -129,334 +109,243 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
-                  "
-                >
-                  Explore<br />Events
-                </p>
-              </div>
+                  ">
+                Explore<br />Events
+              </p>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
+    </div>
 
+    <div class="absolute left-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 -mx-20 bg-gyellow z-50" data-scroll
+      data-scroll-speed="3">
+      <div class="absolute left-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 mb-12 -mx-12 md:-mx-24 bg-gblue z-50"
+        data-scroll data-scroll-speed="8"></div>
+    </div>
+    <div class="absolute right-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 -mx-20 bg-gred z-50" data-scroll
+      data-scroll-speed="3">
       <div
-        class="absolute left-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 -mx-20 bg-gyellow z-50"
-        data-scroll
-        data-scroll-speed="3"
-      >
-        <div
-          class="absolute left-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 mb-12 -mx-12 md:-mx-24 bg-gblue z-50"
-          data-scroll
-          data-scroll-speed="8"
-        ></div>
-      </div>
-      <div
-        class="absolute right-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 -mx-20 bg-gred z-50"
-        data-scroll
-        data-scroll-speed="3"
-      >
-        <div
-          class="absolute right-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 mb-12 -mx-12 -md:-mx-24 bg-ggreen z-50"
-          data-scroll
-          data-scroll-speed="8"
-        ></div>
-      </div>
-    </section>
-    <section
-      id="timeline"
-      class="w-screen flex justify-center 2xl:px-32"
-      data-scroll-section
-      data-scroll-id="timeline"
-    >
-      <div
-        class="flex flex-col md:flex-row font-[google_sans] text-center md:text-left justify-center"
-        data-scroll
-      >
-        <div
-          class="md:hidden flex flex-col w-full justify-center justify-items-center mt-12"
-        >
-          <p class="text-6xl text-center font-bold">
-            {<span style="color: #ea4335">Ti</span
-            ><span style="color: #4285f4">me</span
-            ><span style="color: #0f9d58">li</span
-            ><span style="color: #fbbc04">ne</span>}
-          </p>
+        class="absolute right-0 bottom-0 rounded-full w-48 md:w-96 h-48 md:h-96 mb-12 -mx-12 -md:-mx-24 bg-ggreen z-50"
+        data-scroll data-scroll-speed="8"></div>
+    </div>
+  </section>
+  <section id="timeline" class="w-screen flex justify-center 2xl:px-32" data-scroll-section data-scroll-id="timeline">
+    <div class="flex flex-col md:flex-row font-[google_sans] text-center md:text-left justify-center" data-scroll>
+      <div class="md:hidden flex flex-col w-full justify-center justify-items-center mt-12">
+        <p class="text-6xl text-center font-bold">
+          {<span style="color: #ea4335">Ti</span><span style="color: #4285f4">me</span><span
+            style="color: #0f9d58">li</span><span style="color: #fbbc04">ne</span>}
+        </p>
 
-          <p class="flex justify-center">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player
-              src="https://assets9.lottiefiles.com/packages/lf20_L72m3bQKrm.json"
-              background="transparent"
-              speed="1"
-              style="width: 300px; height: 300px"
-              class="w-full"
-              loop
-              autoplay
-            ></lottie-player>
-          </p>
-        </div>
-        <div class="w-full md:w-1/4">
-          <div class="flex flex-col justify-center">
-            <div
-              class="pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between"
-            >
-              <p class="text-3xl">23rd March</p>
-              <p class="text-6xl font-bold">Git and Open Source</p>
-              <p class="text-3xl">Working in Collaborations</p>
-              <button
-                class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gyellow hover:border hover:border-2 hover:border-gyellow rounded-full text-white font-bold bg-gyellow px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-                href="#day1"
-                data-scroll-to="day1"
-                >
-                Know More
-              </button>
-            </div>
-            <div
-            class="md:hidden pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between"
-          >
+        <p class="flex justify-center">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_L72m3bQKrm.json" background="transparent"
+            speed="1" style="width: 300px; height: 300px" class="w-full" loop autoplay></lottie-player>
+        </p>
+      </div>
+      <div class="w-full md:w-1/4">
+        <div class="flex flex-col justify-center">
+          <div class="pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between">
+            <p class="text-3xl">23rd March</p>
+            <p class="text-6xl font-bold">Git and Open Source</p>
+            <p class="text-3xl">Working in Collaborations</p>
+            <button
+              class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gyellow hover:border hover:border-2 hover:border-gyellow rounded-full text-white font-bold bg-gyellow px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
+              href="#day1" data-scroll-to="day1">
+              Know More
+            </button>
+          </div>
+          <div class="md:hidden pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between">
             <p class="text-3xl">24th March</p>
             <p class="text-6xl font-bold">Web Days</p>
             <p class="text-3xl">Portfolio Making</p>
             <button
               class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-              href="#day2"
-              data-scroll-to="day2"
-              >
+              href="#day2" data-scroll-to="day2">
               Know More
             </button>
           </div>
           <!---->
-          <div
-          class="pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between"
-        >
-          <p class="text-3xl">25th March</p>
-          <p class="text-6xl font-bold">AI Talk show & Prompt Engineering</p>
-          <p class="text-3xl">What that AI doing</p>
-          <button
-            class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gred hover:border hover:border-2 hover:border-gred rounded-full text-white font-bold bg-gred px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-            href="#day3"
-            data-scroll-to="day3"
-            >
-            Know More
-          </button>
-        </div>
-
+          <div class="pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between">
+            <p class="text-3xl">25th March</p>
+            <p class="text-6xl font-bold">AI Talk show & Prompt Engineering</p>
+            <p class="text-3xl">What that AI doing</p>
+            <button
+              class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gred hover:border hover:border-2 hover:border-gred rounded-full text-white font-bold bg-gred px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
+              href="#day3" data-scroll-to="day3">
+              Know More
+            </button>
           </div>
-        </div>
-        <div
-          class="hidden md:block flex flex-col w-full justify-center justify-items-center mt-64 w-1/3"
-          data-scroll-delay="0.14"
-          data-scroll
-          data-scroll-speed="0.8"
-        >
-          <p class="text-6xl text-center font-bold">
-            {<span style="color: #ea4335">Ti</span
-            ><span style="color: #4285f4">me</span
-            ><span style="color: #0f9d58">li</span
-            ><span style="color: #fbbc04">ne</span>}
-          </p>
 
-          <p class="flex justify-center">
-            <lottie-player
-              src="https://assets9.lottiefiles.com/packages/lf20_L72m3bQKrm.json"
-              background="transparent"
-              speed="1"
-              class="w-3/4"
-              loop
-              autoplay
-            ></lottie-player>
-          </p>
         </div>
+      </div>
+      <div class="hidden md:block flex flex-col w-full justify-center justify-items-center mt-64 w-1/3"
+        data-scroll-delay="0.14" data-scroll data-scroll-speed="0.8">
+        <p class="text-6xl text-center font-bold">
+          {<span style="color: #ea4335">Ti</span><span style="color: #4285f4">me</span><span
+            style="color: #0f9d58">li</span><span style="color: #fbbc04">ne</span>}
+        </p>
 
-        <div class="md:w-1/4 md:text-right" data-scroll>
-          <div class="flex flex-col">
-            <div
-              class="hidden md:block pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between"
-            >
-              <p class="text-3xl">24th March</p>
-              <p class="text-6xl font-bold">Web Days</p>
-              <p class="text-3xl">Portfolio Making</p>
-              <button
-                class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-                href="#day2"
-                data-scroll-to="day2"
-                >
-                Know More
-              </button>
-            </div>
-            <div
-            class="pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between"
-          >
+        <p class="flex justify-center">
+          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_L72m3bQKrm.json" background="transparent"
+            speed="1" class="w-3/4" loop autoplay></lottie-player>
+        </p>
+      </div>
+
+      <div class="md:w-1/4 md:text-right" data-scroll>
+        <div class="flex flex-col">
+          <div class="hidden md:block pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between">
+            <p class="text-3xl">24th March</p>
+            <p class="text-6xl font-bold">Web Days</p>
+            <p class="text-3xl">Portfolio Making</p>
+            <button
+              class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
+              href="#day2" data-scroll-to="day2">
+              Know More
+            </button>
+          </div>
+          <div class="pb-12 md:pb-48 md:h-[500px] md:flex md:flex-col md:place-content-between">
             <p class="text-3xl">27th March</p>
             <p class="text-6xl font-bold">Flutter Forward Extended</p>
             <p class="text-3xl">CrossPlatform Development</p>
             <button
               class="hover:scale-110 transition ease-in-out hover:bg-white hover:text-gblue hover:border hover:border-2 hover:border-gblue rounded-full text-white font-bold bg-gblue px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-              href="#day4"
-              data-scroll-to="day4"
-              >
+              href="#day4" data-scroll-to="day4">
               Know More
             </button>
           </div>
-            <!---->
+          <!---->
 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="day1" class="w-screen flex justify-center" data-scroll-section data-scroll-id="day1">
+    <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
+      <div class="rounded-lg bg-gyellow mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
+        <div class="flex flex-col md:flex-row justify-evenly w-full">
+          <div class="md:w-1/2">
+            <p class="text-6xl font-bold">Git and Open Source</p>
+            <p class="text-2xl">23rd March - 6-8 pm<br />Venue: 301-ALH</p>
+            <p class="text-2xl pt-8">
+              This event is aimed at beginners, introducing them to git & bash. The speaker will also share his
+              experience in GSOC program.
+            </p>
+          </div>
+          <div class="md:w-1/2 flex flex-col justify-end">
+            <!-- Insert image placeholder -->
+            <div class="flex justify-center">
+              <img src="./images/github.jpg" alt="placeholder" class="rounded-lg w-[300px] h-[300px]" />
+            </div>
+            <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-gitgithub-and-opensource-contributions"
+              class="flex justify-center" target="_blank">
+              <button
+                class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-gyellow hover:text-gred hover:border hover:border-2 hover:border-gred rounded-full text-white font-bold bg-gred px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0">
+                RSVP
+              </button>
+            </a>
           </div>
         </div>
       </div>
-    </section>
-
-    <section
-      id="day1"
-      class="w-screen flex justify-center"
-      data-scroll-section
-      data-scroll-id="day1"
-    >
-      <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
-        <div class="rounded-lg bg-gyellow mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
-          <div class="flex flex-col md:flex-row justify-evenly w-full">
-            <div class="md:w-1/2">
-              <p class="text-6xl font-bold">Git and Open Source</p>
-              <p class="text-2xl">23rd March - 6-8 pm<br />Venue: 301-ALH</p>
-              <p class="text-2xl pt-8">
-               This event is aimed at beginners, introducing them to git & bash. The speaker will also share his experience in GSOC program.
-              </p>
+      <div class="rounded-lg bg-gyellow mx-2 md:w-1/3 overflow-x-hidden pb-4" data-carousel="slide">
+        <div class="relative w-full h-[500px] py-4">
+          <div class="flex flex-col h-[500px] w-full" data-carousel-item>
+            <div class="flex justify-center py-4">
+              <img src="./images/syed.jpeg" class="rounded-full w-[300px] h-[300px] border border-8 border-gred" />
             </div>
-            <div class="md:w-1/2 flex flex-col justify-end">
-              <!-- Insert image placeholder -->
-              <div class="flex justify-center">
-                <img
-                  src="./images/github.jpg"
-                  alt="placeholder"
-                  class="rounded-lg w-[300px] h-[300px]"
-                />
+            <div class="flex flex-col justify-center text-center">
+              <p class="text-3xl font-bold">Syed Ahkam</p>
+              <p>VPoE @ [strift] | SDE Intern @ Manupatra | Freelance Software Developer | Technical Head, GDSC BU |
+                FOSS Enthusiast</p>
+              <div class="flex justify-center my-4">
+                <a href="https://www.linkedin.com/in/syedahkam/" class="rounded-full bg-white mx-4">
+                  <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                    class="h-10 w-10 rounded-full">
+                    <g>
+                      <path style="fill-rule: evenodd; clip-rule: evenodd"
+                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                      <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                            M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
+                          c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
+                          c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
+                          c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
+                          z" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/SyedAhkam1" class="bg-white rounded-full mx-4">
+                  <img src="./icons/twitter.png" class="w-10 h-10" />
+                </a>
               </div>
-              <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-gitgithub-and-opensource-contributions" class="flex justify-center" target="_blank">
-                <button
-                  class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-gyellow hover:text-gred hover:border hover:border-2 hover:border-gred rounded-full text-white font-bold bg-gred px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-                >
-                  RSVP
-                </button>
-              </a>
             </div>
           </div>
-        </div>
-        <div class="rounded-lg bg-gyellow mx-2 md:w-1/3 overflow-x-hidden pb-4" data-carousel="slide">
-          <div class="relative w-full h-[500px] py-4">
-            <div class="flex flex-col h-[500px] w-full" data-carousel-item>
-              <div class="flex justify-center py-4">
-                <img
-                  src="./images/syed.jpeg"
-                  class="rounded-full w-[300px] h-[300px] border border-8 border-gred"
-                />
-              </div>
-              <div class="flex flex-col justify-center text-center">
-                <p class="text-3xl font-bold">Syed Ahkam</p>
-                <p>VPoE @ [strift] | SDE Intern @ Manupatra | Freelance Software Developer | Technical Head, GDSC BU | FOSS Enthusiast</p>
-                <div class="flex justify-center my-4">
-                  <a href="https://www.linkedin.com/in/syedahkam/" class="rounded-full bg-white mx-4">
-                    <svg
-                      fill="#000000"
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewBox="0 0 455 455"
-                      xml:space="preserve"
-                      class="h-10 w-10 rounded-full"
-                    >
-                      <g>
-                        <path
-                          style="fill-rule: evenodd; clip-rule: evenodd"
-                          d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                        />
-                        <path
-                          style="fill-rule: evenodd; clip-rule: evenodd"
-                          d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+          <div class="flex flex-col h-[500px] w-full" data-carousel-item>
+            <div class="flex justify-center py-4">
+              <img src="./images/adityanarayan.jpeg"
+                class="rounded-full w-[300px] h-[300px] border border-8 border-gred" />
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <p class="text-3xl font-bold">Aditya Narayan Sinha</p>
+              <p>Google SoC'22 @ IntelOwl | Ex Dev Intern @ SupplyNote | MLH Spring'21 Pre-Fellow | AppSec Village
+                DEFCON Volunteer | CSI, BU Technical head</p>
+              <div class="flex justify-center my-4">
+                <a href="https://www.linkedin.com/in/adityanarayansinha/" class="rounded-full bg-white mx-4">
+                  <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                    class="h-10 w-10 rounded-full">
+                    <g>
+                      <path style="fill-rule: evenodd; clip-rule: evenodd"
+                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                      <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                             M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                           c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                           c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                           c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                          z"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com/SyedAhkam1" class="bg-white rounded-full mx-4">
-                    <img src="./icons/twitter.png" class="w-10 h-10" />
-                  </a>
-                </div>
+                          z" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/0x0elliot" class="bg-white rounded-full mx-4">
+                  <img src="./icons/twitter.png" class="w-10 h-10" />
+                </a>
               </div>
             </div>
-            <div class="flex flex-col h-[500px] w-full" data-carousel-item>
-              <div class="flex justify-center py-4">
-                <img
-                  src="./images/adityanarayan.jpeg"
-                  class="rounded-full w-[300px] h-[300px] border border-8 border-gred"
-                />
-              </div>
-              <div class="flex flex-col justify-center text-center">
-                <p class="text-3xl font-bold">Aditya Narayan Sinha</p>
-                <p>Google SoC'22 @ IntelOwl | Ex Dev Intern @ SupplyNote | MLH Spring'21 Pre-Fellow | AppSec Village DEFCON Volunteer | CSI, BU Technical head</p>
-                <div class="flex justify-center my-4">
-                  <a href="https://www.linkedin.com/in/adityanarayansinha/" class="rounded-full bg-white mx-4">
-                    <svg
-                      fill="#000000"
-                      version="1.1"
-                      id="Layer_1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      viewBox="0 0 455 455"
-                      xml:space="preserve"
-                      class="h-10 w-10 rounded-full"
-                    >
-                      <g>
-                        <path
-                          style="fill-rule: evenodd; clip-rule: evenodd"
-                          d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                        />
-                        <path
-                          style="fill-rule: evenodd; clip-rule: evenodd"
-                          d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
-                            M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
-                          c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
-                          c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
-                          c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                          z"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                  <a href="https://twitter.com/0x0elliot" class="bg-white rounded-full mx-4">
-                    <img src="./icons/twitter.png" class="w-10 h-10" />
-                  </a>
-                </div>
-              </div>
-            </div>
+          </div>
           <!-- Slider controls -->
-          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                  <span class="sr-only">Previous</span>
-              </span>
+          <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
           </button>
-          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                  <span class="sr-only">Next</span>
-              </span>
+          <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
           </button>
-          </div>
         </div>
       </div>
-      
-    </section>
+    </div>
+
+  </section>
   <!-- Sectioon event end-->
-    <section
-    id="day2"
-    class="w-screen flex justify-center"
-    data-scroll-section
-    data-scroll-id="day2"
-  >
+  <section id="day2" class="w-screen flex justify-center" data-scroll-section data-scroll-id="day2">
     <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
       <div class="rounded-lg bg-ggreen mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
         <div class="flex flex-col md:flex-row justify-evenly w-full">
@@ -464,23 +353,20 @@
             <p class="text-6xl font-bold">Web Days</p>
             <p class="text-2xl">24th March - 3-6 pm<br />Venue: 301-ALH</p>
             <p class="text-2xl pt-8">
-              The WebDev will be a fun and interactive web development workshop where you will learn to create your first website with Day 1’s GitHub knowledge within 3 hours.
+              The WebDev will be a fun and interactive web development workshop where you will learn to create your
+              first website with Day 1’s GitHub knowledge within 3 hours.
 
             </p>
           </div>
           <div class="md:w-1/2 flex flex-col justify-end">
             <!-- Insert image placeholder -->
             <div class="flex justify-center">
-              <img
-                src="./images/webdev.png"
-                alt="placeholder"
-                class="rounded-lg w-[300px] h-[300px]"
-              />
+              <img src="./images/webdev.png" alt="placeholder" class="rounded-lg w-[300px] h-[300px]" />
             </div>
-            <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-web-days-portfolio-making/" class="flex justify-center" target="_blank">
+            <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-web-days-portfolio-making/"
+              class="flex justify-center" target="_blank">
               <button
-                class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-ggreen hover:text-gblue hover:border hover:border-2 hover:border-gblue rounded-full text-white font-bold bg-gblue px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-              >
+                class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-ggreen hover:text-gblue hover:border hover:border-2 hover:border-gblue rounded-full text-white font-bold bg-gblue px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0">
                 RSVP
               </button>
             </a>
@@ -490,40 +376,25 @@
       <div class="rounded-lg bg-ggreen mx-2 md:w-1/3">
         <div class="flex flex-col h-full w-full">
           <div class="flex justify-center py-4">
-            <img
-              src="./images/kanishk.jpeg"
-              class="rounded-full w-[300px] h-[300px] border border-8 border-gblue"
-            />
+            <img src="./images/kanishk.jpeg" class="rounded-full w-[300px] h-[300px] border border-8 border-gblue" />
           </div>
           <div class="flex flex-col justify-center text-center">
             <p class="text-3xl font-bold">Kanishk Khurana</p>
             <p>Google DSC Lead | DevRel @ Lumos Labs | SIH'22 |Founder - Pehchaan Drama Society | Mentor @ Clapingo</p>
             <div class="flex justify-center my-4">
               <a href="https://www.linkedin.com/in/kanishkkhurana/" class="rounded-full bg-white mx-4">
-                <svg
-                  fill="#000000"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 455 455"
-                  xml:space="preserve"
-                  class="h-10 w-10 rounded-full"
-                >
+                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                  class="h-10 w-10 rounded-full">
                   <g>
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                    />
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                    <path style="fill-rule: evenodd; clip-rule: evenodd"
+                      d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                    <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                         M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                       c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                       c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                       c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                      z"
-                    />
+                      z" />
                   </g>
                 </svg>
               </a>
@@ -535,366 +406,342 @@
         </div>
       </div>
     </div>
-    
+
   </section>
 
-  <section
-  id="day3"
-  class="w-screen flex justify-center"
-  data-scroll-section
-  data-scroll-id="day3"
-  >
-  <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
-    <div class="rounded-lg bg-gred mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
-      <div class="flex flex-col md:flex-row justify-evenly w-full">
-        <div class="md:w-1/2">
-          <p class="text-6xl font-bold">AI Talk show & Prompt Engineering</p>
-          <p class="text-2xl">25th March - 2-5 pm<br />Venue: 301-ALH</p>
-          <p class="text-2xl pt-8">
-            The last of the interesting event for the final day marking the end of the google week , we have with you a talk show on AI/ML  lined up with a prompt engineering competition .  
-  
-          </p>
-        </div>
-        <div class="md:w-1/2 flex flex-col justify-end">
-          <!-- Insert image placeholder -->
-          <div class="flex justify-center">
-            <img
-              src="./images/ai.png"
-              alt="placeholder"
-              class="rounded-lg w-[300px] h-[300px]"
-            />
+  <section id="day3" class="w-screen flex justify-center" data-scroll-section data-scroll-id="day3">
+    <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
+      <div class="rounded-lg bg-gred mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
+        <div class="flex flex-col md:flex-row justify-evenly w-full">
+          <div class="md:w-1/2">
+            <p class="text-6xl font-bold">AI Talk show & Prompt Engineering</p>
+            <p class="text-2xl">25th March - 2-5 pm<br />Venue: 301-ALH</p>
+            <p class="text-2xl pt-8">
+              The last of the interesting event for the final day marking the end of the google week , we have with you
+              a talk show on AI/ML lined up with a prompt engineering competition .
+
+            </p>
           </div>
-          <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-the-ai-talk-show/" class="flex justify-center" target="_blank">
-            <button
-              class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-gred hover:text-gyellow hover:border hover:border-2 hover:border-gyellow rounded-full text-white font-bold bg-gyellow px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-            >
-              RSVP
-            </button>
-          </a>
+          <div class="md:w-1/2 flex flex-col justify-end">
+            <!-- Insert image placeholder -->
+            <div class="flex justify-center">
+              <img src="./images/ai.png" alt="placeholder" class="rounded-lg w-[300px] h-[300px]" />
+            </div>
+            <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-the-ai-talk-show/"
+              class="flex justify-center" target="_blank">
+              <button
+                class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-gred hover:text-gyellow hover:border hover:border-2 hover:border-gyellow rounded-full text-white font-bold bg-gyellow px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0">
+                RSVP
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="rounded-lg bg-gred mx-2 md:w-1/3 overflow-x-hidden pb-4" data-carousel="slide">
-      <div class="relative w-full h-[500px] py-4">
-        <div class="flex flex-col h-[500px] w-full" data-carousel-item>
-          <div class="flex justify-center py-4">
-            <img
-              src="./images/akshat.jpeg"
-              class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow"
-            />
-          </div>
-          <div class="flex flex-col justify-center text-center">
-            <p class="text-3xl font-bold">Akshat Rastogi</p>
-            <p>Upcoming intern at Morgan Stanley AIEngineer | SoftwareDeveloper | ResultsDriven | StrategicPlanning</p>
-            <div class="flex justify-center my-4">
-              <a href="https://www.linkedin.com/in/akshat-rastogi-3425aa1b8/" class="rounded-full bg-white mx-4">
-                <svg
-                  fill="#000000"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 455 455"
-                  xml:space="preserve"
-                  class="h-10 w-10 rounded-full"
-                >
-                  <g>
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                    />
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+      <div class="rounded-lg bg-gred mx-2 md:w-1/3 overflow-x-hidden pb-4" data-carousel="slide">
+        <div class="relative w-full h-[500px] py-4">
+          <div class="flex flex-col h-[500px] w-full" data-carousel-item>
+            <div class="flex justify-center py-4">
+              <img src="./images/akshat.jpeg" class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow" />
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <p class="text-3xl font-bold">Akshat Rastogi</p>
+              <p>Upcoming intern at Morgan Stanley AIEngineer | SoftwareDeveloper | ResultsDriven | StrategicPlanning
+              </p>
+              <div class="flex justify-center my-4">
+                <a href="https://www.linkedin.com/in/akshat-rastogi-3425aa1b8/" class="rounded-full bg-white mx-4">
+                  <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                    class="h-10 w-10 rounded-full">
+                    <g>
+                      <path style="fill-rule: evenodd; clip-rule: evenodd"
+                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                      <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                         M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                       c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                       c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                       c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                      z"
-                    />
-                  </g>
-                </svg>
-              </a>
-              <a href="https://twitter.com/AkshatRasogi" class="bg-white rounded-full mx-4">
-                <img src="./icons/twitter.png" class="w-10 h-10" />
-              </a>
+                      z" />
+                    </g>
+                  </svg>
+                </a>
+                <a href="https://twitter.com/AkshatRasogi" class="bg-white rounded-full mx-4">
+                  <img src="./icons/twitter.png" class="w-10 h-10" />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flex flex-col h-[500px] w-full" data-carousel-item>
-          <div class="flex justify-center py-4">
-            <img
-              src="./images/anon.jpeg"
-              class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow"
-            />
-          </div>
-          <div class="flex flex-col justify-center text-center">
-            <p class="text-3xl font-bold">Anon Roy</p>
-            <p>Speaker/Mentor/Judge @ 160+ Conferences/Hackathons | Data Scientist</p>
-            <div class="flex justify-center my-4">
-              <a href="linkedin" class="rounded-full bg-white mx-4">
-                <svg
-                  fill="#000000"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 455 455"
-                  xml:space="preserve"
-                  class="h-10 w-10 rounded-full"
-                >
-                  <g>
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                    />
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+          <div class="flex flex-col h-[500px] w-full" data-carousel-item>
+            <div class="flex justify-center py-4">
+              <img src="./images/anon.jpeg" class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow" />
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <p class="text-3xl font-bold">Anon Roy</p>
+              <p>Speaker/Mentor/Judge @ 160+ Conferences/Hackathons | Data Scientist</p>
+              <div class="flex justify-center my-4">
+                <a href="linkedin" class="rounded-full bg-white mx-4">
+                  <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                    class="h-10 w-10 rounded-full">
+                    <g>
+                      <path style="fill-rule: evenodd; clip-rule: evenodd"
+                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                      <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                         M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                       c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                       c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                       c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                      z"
-                    />
-                  </g>
-                </svg>
-              </a>
+                      z" />
+                    </g>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="flex flex-col h-[500px] w-full" data-carousel-item>
-          <div class="flex justify-center py-4">
-            <img
-              src="./images/shivani.jpeg"
-              class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow"
-            />
-          </div>
-          <div class="flex flex-col justify-center text-center">
-            <p class="text-3xl font-bold">Shivani Goel</p>
-            <p>Professor at Bennett University</p>
-            <div class="flex justify-center my-4">
-              <a href="https://www.linkedin.com/in/shivani-goel-866160170/" class="rounded-full bg-white mx-4">
-                <svg
-                  fill="#000000"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 455 455"
-                  xml:space="preserve"
-                  class="h-10 w-10 rounded-full"
-                >
-                  <g>
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                    />
-                    <path
-                      style="fill-rule: evenodd; clip-rule: evenodd"
-                      d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+          <div class="flex flex-col h-[500px] w-full" data-carousel-item>
+            <div class="flex justify-center py-4">
+              <img src="./images/shivani.jpeg"
+                class="rounded-full w-[300px] h-[300px] border border-8 border-gyellow" />
+            </div>
+            <div class="flex flex-col justify-center text-center">
+              <p class="text-3xl font-bold">Shivani Goel</p>
+              <p>Professor at Bennett University</p>
+              <div class="flex justify-center my-4">
+                <a href="https://www.linkedin.com/in/shivani-goel-866160170/" class="rounded-full bg-white mx-4">
+                  <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                    class="h-10 w-10 rounded-full">
+                    <g>
+                      <path style="fill-rule: evenodd; clip-rule: evenodd"
+                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                      <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                         M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                       c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                       c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                       c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                      z"
-                    />
-                  </g>
-                </svg>
-              </a>
+                      z" />
+                    </g>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      <!-- Slider controls -->
-      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          <!-- Slider controls -->
+          <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
               <span class="sr-only">Previous</span>
-          </span>
-      </button>
-      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </span>
+          </button>
+          <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+              class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
               <span class="sr-only">Next</span>
-          </span>
-      </button>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  
+
   </section>
 
-<section
-id="day4"
-class="w-screen flex justify-center"
-data-scroll-section
-data-scroll-id="day4"
->
-<div class="flex flex-col md:flex-row w-full justify-evenly my-4">
-  <div class="rounded-lg bg-gblue mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
-    <div class="flex flex-col md:flex-row justify-evenly w-full">
-      <div class="md:w-1/2">
-        <p class="text-6xl font-bold">Flutter Forward Extended</p>
-        <p class="text-2xl">27th March - 6-8 pm<br />Venue: 301-ALH</p>
-        <p class="text-2xl pt-8">
-          The workshop will help you create your own small android app and learn the basics of Flutter, how to use Android Studio, Flutter SDK, and emulator to build and run your own stylish app.
+  <section id="day4" class="w-screen flex justify-center" data-scroll-section data-scroll-id="day4">
+    <div class="flex flex-col md:flex-row w-full justify-evenly my-4">
+      <div class="rounded-lg bg-gblue mx-2 md:w-[60%] 2xl:w-1/2 p-8 mb-4">
+        <div class="flex flex-col md:flex-row justify-evenly w-full">
+          <div class="md:w-1/2">
+            <p class="text-6xl font-bold">Flutter Forward Extended</p>
+            <p class="text-2xl">27th March - 6-8 pm<br />Venue: 301-ALH</p>
+            <p class="text-2xl pt-8">
+              The workshop will help you create your own small android app and learn the basics of Flutter, how to use
+              Android Studio, Flutter SDK, and emulator to build and run your own stylish app.
 
-        </p>
-      </div>
-      <div class="md:w-1/2 flex flex-col justify-end">
-        <!-- Insert image placeholder -->
-        <div class="flex justify-center">
-          <img
-            src="./images/flutter.jpeg"
-            alt="placeholder"
-            class="rounded-lg w-[300px] h-[300px]"
-          />
+            </p>
+          </div>
+          <div class="md:w-1/2 flex flex-col justify-end">
+            <!-- Insert image placeholder -->
+            <div class="flex justify-center">
+              <img src="./images/flutter.jpeg" alt="placeholder" class="rounded-lg w-[300px] h-[300px]" />
+            </div>
+            <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-flutter-forward-extended-bennett-university/"
+              class="flex justify-center" target="_blank">
+              <button
+                class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-gblue hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0">
+                RSVP
+              </button>
+            </a>
+          </div>
         </div>
-        <a href="https://gdsc.community.dev/events/details/developer-student-clubs-bennett-university-greater-noida-presents-flutter-forward-extended-bennett-university/" class="flex justify-center" target="_blank">
-          <button
-            class="w-[300px] place-self-center hover:scale-110 transition ease-in-out hover:bg-gblue hover:text-ggreen hover:border hover:border-2 hover:border-ggreen rounded-full text-white font-bold bg-ggreen px-6 py-2 mt-4 text-3xl relative object-bottom mb-0 bottom-0"
-          >
-            RSVP
-          </button>
-        </a>
       </div>
-    </div>
-  </div>
-  <div class="rounded-lg bg-gblue mx-2 md:w-1/3">
-    <div class="flex flex-col h-full w-full">
-      <div class="flex justify-center py-4">
-        <img
-          src="./images/raghav.jpeg"
-          class="rounded-full w-[300px] h-[300px] border border-8 border-ggreen"
-        />
-      </div>
-      <div class="flex flex-col justify-center text-center">
-        <p class="text-3xl font-bold">Raghav Gupta</p>
-        <p>Flutter Developer | Software Developer @ Cab My Ride </p>
-        <div class="flex justify-center my-4">
-          <a href="https://www.linkedin.com/in/raghav-gupta-6a292318b/" class="rounded-full bg-white mx-4">
-            <svg
-              fill="#000000"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 455 455"
-              xml:space="preserve"
-              class="h-10 w-10 rounded-full"
-            >
-              <g>
-                <path
-                  style="fill-rule: evenodd; clip-rule: evenodd"
-                  d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                />
-                <path
-                  style="fill-rule: evenodd; clip-rule: evenodd"
-                  d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+      <div class="rounded-lg bg-gblue mx-2 md:w-1/3">
+        <div class="flex flex-col h-full w-full">
+          <div class="flex justify-center py-4">
+            <img src="./images/raghav.jpeg" class="rounded-full w-[300px] h-[300px] border border-8 border-ggreen" />
+          </div>
+          <div class="flex flex-col justify-center text-center">
+            <p class="text-3xl font-bold">Raghav Gupta</p>
+            <p>Flutter Developer | Software Developer @ Cab My Ride </p>
+            <div class="flex justify-center my-4">
+              <a href="https://www.linkedin.com/in/raghav-gupta-6a292318b/" class="rounded-full bg-white mx-4">
+                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 455 455" xml:space="preserve"
+                  class="h-10 w-10 rounded-full">
+                  <g>
+                    <path style="fill-rule: evenodd; clip-rule: evenodd"
+                      d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z" />
+                    <path style="fill-rule: evenodd; clip-rule: evenodd" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                     M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                   c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                   c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                   c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
-                  z"
-                />
-              </g>
-            </svg>
-          </a>
+                  z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-</section>
+  </section>
 
+  <!-- Sponsors -->
+  <section data-scroll-section id="sponsors" data-scroll-id="sponsors" class="bg-gray-700 py-8">
+    <div class="flex flex-col justify-center items-center">
+      <p class="text-5xl font-bold text-white">Sponsors</p>
+      <p class="text-2xl text-white">Our Sponsors</p>
+    </div>
+    <div class="flex flex-col md:flex-row justify-evenly items-center py-8">
+      <div class="flex flex-col justify-center items-center">
+        <img src="images/Lumos.jpeg" class="w-[300px] h-[300px] rounded-lg" alt="Lumos Labs" />
+        <a class="text-2xl text-white font-bold" href="https://www.lumoslabs.co/">
+          <p class="text-2xl text-white font-bold">Lumos Labs</p>
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="images/Axure_RP_icon@2x.png" class="w-[300px] h-[300px] rounded-lg" alt="Axure" />
+        <a class="text-2xl text-white font-bold" href="https://www.lumoslabs.co/">
+          <p class="text-2xl text-white font-bold">Axure</p>
+        </a>
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <img src="images/cabinet.jpg" class="w-[300px] h-[300px] rounded-lg" alt="Student Cabinet BU" />
+        <a class="text-2xl text-white font-bold" href="https://www.instagram.com/cabinet_csetbu/">
+          <p class="text-2xl text-white font-bold">Student Cabinet BU</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-<footer data-scroll-section id="about" data-scroll-id="about" class="pb-64 md:pb-0">
-  <div class="w-full bg-gray-700 flex flex-col md:flex-row py-8 px-12 flex justify-evenly space-x-6 space-y-6">
-  <div class="rounded-lg overflow-hidden">
-      <iframe class="w-full h-[250px] md:w-[560px] md:h-[315px]" src="https://www.youtube.com/embed/cBfjdg5zeAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-  <div class="md:w-1/3">
-    <p class="text-5xl text-white font-bold">About GDSC</p>
-    <p class="text-white text-xl">
-      Google Developer Student Club Bennett University is a program that supports student developers worldwide, empowering them with technical skills and resources to become tech leaders in their communities. The program inspires innovation and entrepreneurship while encouraging students to use technology to solve real-world problems.</p>
-  </div>
-  <div>
-    <p class="text-5xl text-white font-bold" data-scroll=""> Connect With Us!</p>
-    <div class="flex-row">
-      <a href="https://twitter.com/dsc_bu">
-        <div class="flex">
-          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-              width="50" height="50"
-              viewBox="0 0 50 50">
-              <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z"></path>
-          </svg>
-          <p class="text-white text-xl align-center place-self-center	mx-2">@dsc_bu</p>
-        </div>
-      </a>
-      <a href="https://instagram.com/gdsc__bu">
-        <div class="flex">
-          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="50" height="50"
-          viewBox="0 0 64 64">
-          <path d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z"></path>
-          </svg>
-          <p class="text-white text-xl align-center place-self-center mx-2">@gdsc__bu</p>
-        </div>
-      </a>
-      <a href="https://github.com/DSC-Bennett-University">
-        <div class="flex">
-          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="50" height="50"
-          viewBox="0 0 64 64">
-          <path d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"></path>
-          </svg>
-          <p class="text-white text-xl align-center place-self-center mx-2">DSC-Bennett-University</p>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/company/dsc-bu">
-        <div class="flex mb-4">
-          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-          width="50" height="50"
-          viewBox="0 0 30 30">
-              <path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z"></path>
-          </svg>
-          <p class="text-white text-xl align-center place-self-center mx-2">GDSC BU</p>
-        </div>
-      </a>
+  <footer data-scroll-section id="about" data-scroll-id="about" class="pb-64 md:pb-0">
+    <div class="w-full bg-gray-700 flex flex-col md:flex-row py-8 px-12 flex justify-evenly space-x-6 space-y-6">
+      <div class="rounded-lg overflow-hidden">
+        <iframe class="w-full h-[250px] md:w-[560px] md:h-[315px]" src="https://www.youtube.com/embed/cBfjdg5zeAE"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <div class="md:w-1/3">
+        <p class="text-5xl text-white font-bold">About GDSC</p>
+        <p class="text-white text-xl">
+          Google Developer Student Club Bennett University is a program that supports student developers worldwide,
+          empowering them with technical skills and resources to become tech leaders in their communities. The program
+          inspires innovation and entrepreneurship while encouraging students to use technology to solve real-world
+          problems.</p>
+      </div>
       <div>
+        <p class="text-5xl text-white font-bold" data-scroll=""> Connect With Us!</p>
+        <div class="flex-row">
+          <a href="https://twitter.com/dsc_bu">
+            <div class="flex">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                viewBox="0 0 50 50">
+                <path
+                  d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M36.237,20.524 c0.01,0.236,0.016,0.476,0.016,0.717C36.253,28.559,30.68,37,20.491,37c-3.128,0-6.041-0.917-8.491-2.489 c0.433,0.052,0.872,0.077,1.321,0.077c2.596,0,4.985-0.884,6.879-2.37c-2.424-0.044-4.468-1.649-5.175-3.847 c0.339,0.065,0.686,0.1,1.044,0.1c0.505,0,0.995-0.067,1.458-0.195c-2.532-0.511-4.441-2.747-4.441-5.432c0-0.024,0-0.047,0-0.07 c0.747,0.415,1.6,0.665,2.509,0.694c-1.488-0.995-2.464-2.689-2.464-4.611c0-1.015,0.272-1.966,0.749-2.786 c2.733,3.351,6.815,5.556,11.418,5.788c-0.095-0.406-0.145-0.828-0.145-1.262c0-3.059,2.48-5.539,5.54-5.539 c1.593,0,3.032,0.672,4.042,1.749c1.261-0.248,2.448-0.709,3.518-1.343c-0.413,1.292-1.292,2.378-2.437,3.064 c1.122-0.136,2.188-0.432,3.183-0.873C38.257,18.766,37.318,19.743,36.237,20.524z">
+                </path>
+              </svg>
+              <p class="text-white text-xl align-center place-self-center	mx-2">@dsc_bu</p>
+            </div>
+          </a>
+          <a href="https://instagram.com/gdsc__bu">
+            <div class="flex">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                viewBox="0 0 64 64">
+                <path
+                  d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z">
+                </path>
+              </svg>
+              <p class="text-white text-xl align-center place-self-center mx-2">@gdsc__bu</p>
+            </div>
+          </a>
+          <a href="https://github.com/DSC-Bennett-University">
+            <div class="flex">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                viewBox="0 0 64 64">
+                <path
+                  d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                </path>
+              </svg>
+              <p class="text-white text-xl align-center place-self-center mx-2">DSC-Bennett-University</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/company/dsc-bu">
+            <div class="flex mb-4">
+              <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                viewBox="0 0 30 30">
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M10.496,8.403 c0.842,0,1.403,0.561,1.403,1.309c0,0.748-0.561,1.309-1.496,1.309C9.561,11.022,9,10.46,9,9.712C9,8.964,9.561,8.403,10.496,8.403z M12,20H9v-8h3V20z M22,20h-2.824v-4.372c0-1.209-0.753-1.488-1.035-1.488s-1.224,0.186-1.224,1.488c0,0.186,0,4.372,0,4.372H14v-8 h2.918v1.116C17.294,12.465,18.047,12,19.459,12C20.871,12,22,13.116,22,15.628V20z">
+                </path>
+              </svg>
+              <p class="text-white text-xl align-center place-self-center mx-2">GDSC BU</p>
+            </div>
+          </a>
+          <div>
 
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</footer>
-<!-- <section class="md:hidden h-1 w-full bg-gray-700" data-scroll-section>
+  </footer>
+  <!-- <section class="md:hidden h-1 w-full bg-gray-700" data-scroll-section>
   ㅤㅤ
 
 </section> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 
-    <script>
-      const scroller = new LocomotiveScroll({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: true,
-        touchMultiplier: 4,
-      });
-      document.addEventListener("lazyloaded", function () {
-        scroller.update();
-      });
+  <script>
+    const scroller = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+      smoothMobile: true,
+      touchMultiplier: 4,
+    });
+    document.addEventListener("lazyloaded", function () {
+      scroller.update();
+    });
 
-      setTimeout(() => {
-        console.log("updating")
-        scroller.update();
-      }, 1000);
-      var scrollEventHandler = function () {
-        window.scroll(0, window.pageYOffset)
-      }
-      window.addEventListener("scroll", scrollEventHandler, false);
-    </script>
-  </body>
+    setTimeout(() => {
+      console.log("updating")
+      scroller.update();
+    }, 1000);
+    var scrollEventHandler = function () {
+      window.scroll(0, window.pageYOffset)
+    }
+    window.addEventListener("scroll", scrollEventHandler, false);
+  </script>
+</body>
+
 </html>
